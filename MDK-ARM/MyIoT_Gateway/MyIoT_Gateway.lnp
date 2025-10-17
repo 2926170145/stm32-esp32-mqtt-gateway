@@ -1,0 +1,22 @@
+--cpu Cortex-M3
+"myiot_gateway\startup_stm32f103xb.o"
+"myiot_gateway\main.o"
+"myiot_gateway\stm32f1xx_it.o"
+"myiot_gateway\stm32f1xx_hal_msp.o"
+"myiot_gateway\stm32f1xx_hal_gpio_ex.o"
+"myiot_gateway\stm32f1xx_hal_uart.o"
+"myiot_gateway\stm32f1xx_hal.o"
+"myiot_gateway\stm32f1xx_hal_rcc.o"
+"myiot_gateway\stm32f1xx_hal_rcc_ex.o"
+"myiot_gateway\stm32f1xx_hal_gpio.o"
+"myiot_gateway\stm32f1xx_hal_dma.o"
+"myiot_gateway\stm32f1xx_hal_cortex.o"
+"myiot_gateway\stm32f1xx_hal_pwr.o"
+"myiot_gateway\stm32f1xx_hal_flash.o"
+"myiot_gateway\stm32f1xx_hal_flash_ex.o"
+"myiot_gateway\stm32f1xx_hal_exti.o"
+"myiot_gateway\system_stm32f1xx.o"
+--strict --scatter "MyIoT_Gateway\MyIoT_Gateway.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "MyIoT_Gateway.map" -o MyIoT_Gateway\MyIoT_Gateway.axf
