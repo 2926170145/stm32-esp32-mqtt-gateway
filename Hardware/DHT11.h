@@ -4,7 +4,7 @@
 
 // 定义引脚
 #define DHT11_GPIO_Port GPIOB
-#define DHT11_GPIO_Pin GPIO_Pin_13
+#define DHT11_GPIO_Pin GPIO_Pin_15
 
 // 定义函数
 #define dht11_high GPIO_SetBits(DHT11_GPIO_Port, DHT11_GPIO_Pin)

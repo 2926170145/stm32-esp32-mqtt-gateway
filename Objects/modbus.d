@@ -1,12 +1,12 @@
 .\objects\modbus.o: Hardware\modbus.c
 .\objects\modbus.o: Hardware\modbus.h
-.\objects\modbus.o: .\User\stm32f10x_conf.h
-.\objects\modbus.o: .\Library\stm32f10x_adc.h
 .\objects\modbus.o: .\Start\stm32f10x.h
 .\objects\modbus.o: .\Start\core_cm3.h
 .\objects\modbus.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\modbus.o: .\Start\system_stm32f10x.h
 .\objects\modbus.o: .\User\stm32f10x_conf.h
+.\objects\modbus.o: .\Library\stm32f10x_adc.h
+.\objects\modbus.o: .\Start\stm32f10x.h
 .\objects\modbus.o: .\Library\stm32f10x_bkp.h
 .\objects\modbus.o: .\Library\stm32f10x_can.h
 .\objects\modbus.o: .\Library\stm32f10x_cec.h
@@ -32,3 +32,4 @@
 .\objects\modbus.o: Hardware\modbus-uart.h
 .\objects\modbus.o: Hardware\modbus-crc.h
 .\objects\modbus.o: .\User\iwdg.h
+.\objects\modbus.o: Hardware\Servo.h

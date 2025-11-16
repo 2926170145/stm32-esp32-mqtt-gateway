@@ -13,7 +13,7 @@ void IWDG_Init(void)
     IWDG_Enable();
 }
 
-// 喂狗
+// 硬件看门狗喂狗,超时自动复位
 void IWDG_Feed(void)
 {
     IWDG_ReloadCounter();

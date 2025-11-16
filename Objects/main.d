@@ -33,3 +33,11 @@
 .\objects\main.o: .\Hardware\modbus.h
 .\objects\main.o: .\Hardware\DHT11.h
 .\objects\main.o: User\iwdg.h
+.\objects\main.o: .\Hardware\oled.h
+.\objects\main.o: .\Hardware\display.h
+.\objects\main.o: .\Hardware\Buzzer.h
+.\objects\main.o: .\Hardware\LightSensor.h
+.\objects\main.o: .\Hardware\key.h
+.\objects\main.o: .\Hardware\MPU6050.h
+.\objects\main.o: User\MySPI.h
+.\objects\main.o: .\Hardware\Servo.h

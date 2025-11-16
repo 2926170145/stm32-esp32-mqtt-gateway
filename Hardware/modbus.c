@@ -2,6 +2,7 @@
 #include "modbus-uart.h"
 #include "modbus-crc.h"
 #include "iwdg.h"
+#include "Servo.h"
 
 MODBUS modbus;
 extern u16 Reg[];
@@ -9,7 +10,7 @@ extern u16 Reg[];
 
 /*
 因为波特率 9600
-1位数据的时间为 1000000us/9600bit/s=104us
+串口通信1位数据的时间为 1000000us/9600bit/s=104us
 一个字节为    104us*10位  =1040us
 所以 MODBUS确定一个数据帧完成的时间为   1040us*3.5=3.64ms  ->10ms
 */
@@ -66,9 +67,26 @@ void Modbud_fun6()  //6号功能码处理
 	u16 val;
 	u16 i,crc,j;
 	i=0;
-  Regadd=modbus.rcbuf[2]*256+modbus.rcbuf[3];  //得到要修改的地址 
+	Regadd=modbus.rcbuf[2]*256+modbus.rcbuf[3];  //得到要修改的地址 
 	val=modbus.rcbuf[4]*256+modbus.rcbuf[5];     //修改后的值
 	Reg[Regadd]=val;  //修改本设备相应的寄存器
+	
+	// ============ 添加舵机控制逻辑 ============
+	switch(Regadd) {
+		case 0x000C:  // 工作模式寄存器
+			// 模式已自动更新到Reg[0x000C]
+			break;
+			
+		case 0x000D:  // 手动舵机角度
+			if(Reg[0x000C] == 1) {  // 手动模式
+				IWDG_Feed();  				// 喂硬件看门狗，防程序卡死
+				Servo_SetAngle((float)val);  // 控制舵机
+				Reg[0x000F] = val;  // 更新实际角度反馈
+				IWDG_Feed();  				// 喂硬件看门狗，防程序卡死
+			}
+			break;
+	}
+	// ============ 舵机控制逻辑结束 ============
 	
 	//以下为回应主机
 	
