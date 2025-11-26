@@ -29,3 +29,4 @@
 .\objects\ledmatrix8x8.o: .\Library\stm32f10x_usart.h
 .\objects\ledmatrix8x8.o: .\Library\stm32f10x_wwdg.h
 .\objects\ledmatrix8x8.o: .\Library\misc.h
+.\objects\ledmatrix8x8.o: .\User\MySPI.h

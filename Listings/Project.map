@@ -1805,7 +1805,7 @@ Image component sizes
       1144        224         40         14          0       5327   display.o
        118         18          0          4          0      17287   iwdg.o
        128         22          0          2          0       1306   key.o
-       146          0          0          0          0       3370   ledmatrix8x8.o
+       146          0          0          0          0       3394   ledmatrix8x8.o
         20          6          0          0          0        478   lightsensor.o
        440         42          0         50          0       2418   main.o
        132         22          0          0          0     204775   misc.o
@@ -1830,7 +1830,7 @@ Image component sizes
         72          0          0          0          0        482   timer.o
 
     ----------------------------------------------------------------------
-      8734        800       2342         92       1744     407673   Object Totals
+      8734        800       2342         92       1744     407697   Object Totals
          0          0         32          0          0          0   (incl. Generated)
         30          0          2          2          0          0   (incl. Padding)
 
@@ -1888,8 +1888,8 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-     10342        912       2342         92       1844     401937   Grand Totals
-     10342        912       2342         92       1844     401937   ELF Image Totals
+     10342        912       2342         92       1844     401961   Grand Totals
+     10342        912       2342         92       1844     401961   ELF Image Totals
      10342        912       2342         92          0          0   ROM Totals
 
 ==============================================================================

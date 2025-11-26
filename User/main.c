@@ -16,6 +16,7 @@
 static volatile uint32_t dht11_update_timer = 0;//刷新DHT11读取标志位
 static volatile uint32_t light_check_timer = 0;		//光敏检测计时器
 static volatile uint32_t mpu6050_check_timer = 0;   // MPU6050检测计时器
+//在
 volatile uint32_t key_check_timer = 0;              //按键检测计时器,在key中调用
 
 //本设备寄存器中的值

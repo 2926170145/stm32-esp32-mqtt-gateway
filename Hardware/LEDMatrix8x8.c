@@ -1,4 +1,5 @@
 #include "LEDMatrix8x8.h"
+#include "MySPI.h"
 
 // MAX7219¼Ä´æÆ÷µØÖ·¶¨Òå
 #define MAX7219_REG_NOOP        0x00

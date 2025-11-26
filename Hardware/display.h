@@ -20,3 +20,4 @@ DisplayMode_t Display_GetCurrentMode(void);
 void Display_UpdateMPU6050Direction(uint16_t *Reg);  // £ºMPU6050·½Ïò¼ì²â
 
 #endif
+

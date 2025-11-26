@@ -12,3 +12,4 @@ void LEDMatrix_DisplayRow(uint8_t row, uint8_t data);
 void LEDMatrix_DisplayPattern(const uint8_t *pattern);
 
 #endif
+

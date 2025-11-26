@@ -17,3 +17,4 @@ uint8_t DHT11ReadByte(void);
 uint8_t DHT11ReadData(uint8_t *Temp_H,uint8_t *Temp_L,uint8_t *Humi_H,uint8_t *Humi_L);
 
 #endif
+

@@ -36,3 +36,4 @@
 #define	MPU6050_WHO_AM_I		0x75	// 器件ID寄存器 - 读取该寄存器应返回0x68(MPU6050的设备地址)
 
 #endif
+
